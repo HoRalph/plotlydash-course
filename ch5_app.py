@@ -4,6 +4,7 @@ import dash_bootstrap_components as dbc
 
 # Initialise the App
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 # Create app components
 markdown = dcc.Markdown(id='our-markdown', children='My First app', style={'fontSize': 12})
